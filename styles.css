@@ -78,3 +78,15 @@ footer {
 footer p {
     margin: 0;
 }
+
+video::-internal-media-controls-download-button {
+    display: none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Ajuster la largeur pour remplir l'espace du bouton supprimé */
+}
