@@ -1,67 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anonymous et la Lutte pour la Liberté</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Anonymous - Luttes pour la Liberté</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ff9900;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: #ff9900;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        #content-container {
+            padding: 20px;
+            position: relative;
+            margin-bottom: 100px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #ff9900;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .custom-alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ff9900;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 9999;
+            animation: blink 0.5s infinite alternate;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .alert-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Anonymous et la Lutte pour la Liberté</h1>
-        <p>Explorons le rôle d'Anonymous dans diverses luttes à travers le monde.</p>
+        <h1>Anonymous - Luttes pour la Liberté</h1>
     </header>
 
-    <main>
-        <section class="introduction">
-            <h2>Qui est Anonymous ?</h2>
-            <p>Anonymous est un collectif international de hacktivistes qui lutte pour la liberté d'expression, la justice sociale, et contre les abus de pouvoir. Le groupe est souvent identifié par le masque de Guy Fawkes, popularisé par le film "V pour Vendetta".</p>
-        </section>
+    <div id="content-container">
+        <div class="section">
+            <h2>Anonymous et la Quête de Liberté</h2>
+            <p>Anonymous est un collectif de hackers et d'activistes engagé dans des luttes pour la liberté et les droits humains à travers le monde. Ils se sont impliqués dans des conflits comme ceux du Rojava, de Gaza, en Ukraine, et en Amazonie pour défendre des peuples tels que les Yézidis et les Mapuches.</p>
+        </div>
 
-        <section class="struggles">
-            <h2>Les Luttes Soutenues par Anonymous</h2>
+        <div class="section">
+            <h2>Pourquoi ces Luttes ?</h2>
+            <p>Toutes ces luttes ont un point commun : la recherche de la liberté. Qu'il s'agisse de protéger les droits humains, de combattre l'oppression ou de préserver les ressources naturelles, Anonymous se tient aux côtés de ceux qui luttent pour leur liberté.</p>
+        </div>
 
-            <div class="struggle" id="rojava">
-                <h3>Rojava - Soutien aux Yézidis et aux Kurdes</h3>
-                <p>Le Rojava est une région autonome dans le nord de la Syrie, dirigée principalement par des Kurdes. Cette région a mis en place un système de gouvernance basé sur la démocratie directe, l'égalité des genres et l'écologie. Les Yézidis, un groupe ethnique kurde, ont été persécutés par l'État islamique, et Anonymous a pris part à la dénonciation de ces atrocités. Le soutien d'Anonymous à Rojava est centré sur la défense des libertés et des droits humains, face à des régimes oppressifs.</p>
-            </div>
+        <div class="section">
+            <h2>Exemple : Le Rojava</h2>
+            <p>Au Rojava, une région autonome kurde en Syrie, Anonymous a soutenu les efforts pour défendre les Yézidis contre les attaques de Daech. Cette lutte est emblématique de leur engagement en faveur des droits humains et de la liberté des peuples opprimés.</p>
+        </div>
 
-            <div class="struggle" id="gaza">
-                <h3>Gaza - Solidarité avec la Palestine</h3>
-                <p>Dans le cadre du conflit israélo-palestinien, Anonymous a mené plusieurs opérations, notamment des cyberattaques contre des sites israéliens, pour protester contre l'occupation et les actions militaires dans la bande de Gaza. Leur soutien à Gaza s'inscrit dans une lutte pour la justice sociale et contre l'oppression des peuples.</p>
-            </div>
-
-            <div class="struggle" id="ukraine">
-                <h3>Ukraine - Résistance à l'agression</h3>
-                <p>Lors de l'invasion de l'Ukraine, Anonymous a déclaré la guerre cybernétique aux forces russes. En menant des attaques contre des infrastructures numériques critiques, le collectif cherche à affaiblir les oppresseurs et à soutenir la souveraineté de l'Ukraine dans sa quête de liberté face à l'agression militaire.</p>
-            </div>
-
-            <div class="struggle" id="amazonie">
-                <h3>Amazonie - Défense des Mapuches</h3>
-                <p>Les Mapuches, un peuple indigène d'Amérique du Sud, luttent contre l'exploitation de leurs terres par des gouvernements et des multinationales. Anonymous a dénoncé les injustices environnementales et les violations des droits humains, soutenant leur combat pour la préservation de leur culture et de leur environnement.</p>
-            </div>
-        </section>
-
-        <section class="common-thread">
-            <h2>Un Fil Conducteur : La Recherche de la Liberté</h2>
-            <p>Toutes ces luttes ont en commun la recherche de la liberté, que ce soit contre des oppresseurs, pour la défense des droits humains, ou pour la préservation de la dignité et de la justice. Anonymous, par son engagement, cherche à rendre visible l'invisible et à donner une voix à ceux qui sont réduits au silence.</p>
-        </section>
-
-        <section class="video-section">
-            <h2>Anonymous en Action</h2>
+        <div class="section">
+            <h2>Vidéo Représentative</h2>
             <video controls controlsList="nodownload">
-    <source src="https://e.top4top.io/m_3149p0o0q0.mp4" type="video/mp4">
-    Votre navigateur ne supporte pas la lecture vidéo.
-</video>
-            <p>Cette vidéo représente bien l'esprit d'Anonymous : un mouvement global, mystérieux, et déterminé à lutter contre les injustices partout où elles se trouvent.</p>
-        </section>
-        <br><br>
-    </main>
-<br><br>
-    <footer>
-        <p>Nous sommes Anonymous. Nous sommes légion. Nous ne pardonnons pas. Nous n'oublions pas.</p>
+                <source src="https://e.top4top.io/m_3149p0o0q0.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
+        </div>
+    </div>
+
+    <footer id="footer">
+        © 2024 Anonymous - Luttes pour la Liberté
     </footer>
 
-    <script src="script.js"></script>
+    <!-- GetButton.io widget -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                telegram: "trknfriendsBot",
+                telegram_color: "#129BF4",
+                whatsapp: "+18056009130",
+                call_to_action: "Im trhacknon message me if you want",
+                button_color: "#E74339",
+                position: "right",
+                order: "telegram,whatsapp",
+                pre_filled_message: "trhacknon replit project",
+            };
+            var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /GetButton.io widget -->
+
+    <script type='text/javascript'>
+        // Anti Clic Droit Personnalisé
+        var message = "Clic droit interdit par trhacknon. Désolé !"; // Message personnalisé
+        function clickIE4() {
+            if (2 == event.button) {
+                showAlert(message);
+                return false;
+            }
+        }
+        function clickNS4(e) {
+            if ((document.layers || document.getElementById && !document.all) && (2 == e.which || 3 == e.which)) {
+                showAlert(message);
+                return false;
+            }
+        }
+        document.layers ? (document.captureEvents(Event.MOUSEDOWN), document.onmousedown = clickNS4) : document.all && !document.getElementById && (document.onmousedown = clickIE4);
+        document.oncontextmenu = new Function("showAlert(message); return false;");
+
+        function showAlert(message) {
+            var alertBox = document.createElement("div");
+            alertBox.className = "custom-alert";
+            alertBox.innerHTML = message;
+            var alertImage = document.createElement("img");
+            alertImage.src = "https://c.top4top.io/p_28244rnme0.jpeg";
+            alertImage.className = "alert-image";
+            alertBox.appendChild(alertImage);
+            // Ajouter l'audio
+            var audio = document.createElement("audio");
+            audio.src = "https://d.top4top.io/m_2824akq1l0.mp3"; // Chemin du fichier audio
+            audio.autoplay = true; // Lecture automatique de l'audio
+            alertBox.appendChild(audio);
+            document.body.appendChild(alertBox);
+            setTimeout(function () {
+                document.body.removeChild(alertBox);
+            }, 4000); // Disparaît après 4 secondes
+        }
+    </script>
 </body>
+
 </html>
