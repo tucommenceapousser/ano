@@ -12,6 +12,9 @@
             color: #ff9900;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -28,8 +31,7 @@
 
         #content-container {
             padding: 20px;
-            position: relative;
-            margin-bottom: 100px;
+            flex: 1;
         }
 
         .section {
@@ -46,14 +48,19 @@
             line-height: 1.6;
         }
 
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
         footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
             background-color: #333;
             color: #ff9900;
             padding: 20px;
             text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
         .custom-alert {
@@ -118,7 +125,7 @@
         </div>
     </div>
 
-    <footer id="footer">
+    <footer>
         © 2024 Anonymous - Luttes pour la Liberté
     </footer>
 
